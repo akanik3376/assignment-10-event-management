@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "John Doe",
+        "comment": "The decorations at your sister's birthday party were absolutely beautiful! It was a fairy-tale wonderland that she'll remember forever",
+        "profile_image": "john_doe.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Alice Smith",
+        "comment": "I invited these event planner to arrange a bachelor party for my best friend!",
+        "profile_image": "alice_smith.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Bob Johnson",
+        "comment": "My family and I are beyond happy to have them plan our wedding day.",
+        "profile_image": "bob_johnson.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Ella Davis",
+        "comment": "Look no further! You are in the right place to plan your celebration.",
+        "profile_image": "ella_davis.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Michael Wilson",
+        "comment": "The decoration at your sister's birthday party was absolutely stunning! It created such a magical atmosphere",
+        "profile_image": "michael_wilson.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Sophia Brown",
+        "comment": "I was so impressed by the attention to detail in the decoration. It truly made the party feel special and memorable.",
+        "profile_image": "sophia_brown.jpg"
+    },
+    {
+        "id": "7",
+        "name": "David Lee",
+        "comment": "The buffet spread at your sister's birthday party was a food lover's dream. Everything was not only tasty but also elegantly arranged.",
+        "profile_image": "david_lee.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Olivia Martinez",
+        "comment": "Kudos to the party planner! The decoration and buffet at your sister's birthday celebration were top-notch. It was a perfect day.",
+        "profile_image": "olivia_martinez.jpg"
+    },
+    {
+        "id": "9",
+        "name": "James Miller",
+        "comment": "The party setup was picture-perfect, and the food was simply delectable!",
+        "profile_image": "james_miller.jpg"
+    }
+]

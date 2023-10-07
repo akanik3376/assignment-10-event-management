@@ -1,27 +1,31 @@
-import { useContext, useState } from "react";
+import { useContext, useState, } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Providor/AuthProvidor";
-import swal from "sweetalert";
+// import swal from "sweetalert";
 
 const RegisterPage = () => {
 
     const { createUser } = useContext(AuthContext)
 
+    const [success, SetSuccess] = useState('')
+    const [error, setError] = useState('')
+
     const HandelRegister = e => {
         e.preventDefault()
 
+        const name = e.target.name.value
         const email = e.target.email.value
         const password = e.target.password.value
+        console.log(name)
 
 
+        if (password.length < 6) {
 
-        // if (password.length < 6) {
-
-        //     swal('error! Password should be at least 6 characters');
-        // }
-        // else if (!/[A-Z]/.test(password)) {
-        //     swal('error! must  have a capital letter');
-        // }
+            setError('error! Password should be at least 6 characters');
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setError('error! Password must  have a capital letter');
+        }
         // else if (!/^(?=.*[a-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+{}[\]:;<>,.?~\\/-]{8,}$/.test(password)
         // ) {
 
@@ -29,12 +33,14 @@ const RegisterPage = () => {
         // }
 
         //    create user 
-        createUser(email, password)
+        createUser(email, password, name)
             .then(result => {
                 console.log(result)
+                SetSuccess('User create successfully')
             })
             .catch(error => {
                 console.error(error)
+
             })
 
     }
@@ -49,6 +55,16 @@ const RegisterPage = () => {
                     <h2 className="text-3xl text-center">Please Registration !</h2>
                     <div className="card flex-shrink-0 ">
                         <form onSubmit={HandelRegister} className="card-body">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
+                                </label>
+                                <input type="name"
+                                    name="name"
+                                    placeholder="name"
+                                    className="input input-bordered" required />
+                            </div>
+
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -70,7 +86,12 @@ const RegisterPage = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
 
-
+                                <div>
+                                    {
+                                        error ? <p className="text-red-700 text-xl">{error}</p>
+                                            : <p className="text-green-700 text-xl">{error}{success}</p>
+                                    }
+                                </div>
                             </div>
 
                             <div className="form-control mt-3">

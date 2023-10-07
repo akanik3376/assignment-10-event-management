@@ -15,7 +15,6 @@ const EventsDitles = () => {
         const findEvents = events.find(event => event.id == id)
         setEvent(findEvents)
     }, [id, events])
-    console.log(event)
 
     const { name, image, description } = event || {}
 

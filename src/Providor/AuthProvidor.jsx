@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, } from "firebase/auth";
+import { GoogleAuthProvider } from "firebase/auth";
+
 import app from "../FireBase/firebase.init";
 
 export const AuthContext = createContext(null)
@@ -12,10 +14,18 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
+
+    // google login
+
+    const provider = new GoogleAuthProvider();
+    const googleLogin = () => {
+        return signInWithPopup(auth, provider)
+    }
+
     // create user
-    const createUser = (email, password) => {
+    const createUser = (name, email, password) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password)
+        return createUserWithEmailAndPassword(auth, name, email, password)
     }
 
     // login user 
@@ -34,12 +44,12 @@ const AuthProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        const unSubscrib = onAuthStateChanged(auth, currentUser => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
             setLoading(false)
         })
         return () => {
-            unSubscrib()
+            unSubscribe()
         }
     }, [])
 
@@ -48,7 +58,8 @@ const AuthProvider = ({ children }) => {
         loading,
         createUser,
         loginUser,
-        signOutUser
+        signOutUser,
+        googleLogin
     }
 
     return (

@@ -7,6 +7,7 @@ import BlogPage from "../Pagges/BlogPage/BlogPage";
 import EventsDitles from "../Components/EventsDitles/EventsDitles";
 import LoginPage from "../Pagges/LoginPage/LoginPage";
 import RegisterPage from "../Components/CommentCard/RegisterPage/RegisterPage";
+import PrivetRout from "./PrivetRout";
 
 const router = createBrowserRouter([
     {
@@ -21,12 +22,12 @@ const router = createBrowserRouter([
             },
             {
                 path: "/event/:id",
-                element: <EventsDitles></EventsDitles>,
+                element: <PrivetRout><EventsDitles></EventsDitles></PrivetRout>,
                 loader: () => fetch("/data.json")
             },
             {
                 path: "/gallery",
-                element: <GlarryPage></GlarryPage>
+                element: <PrivetRout><GlarryPage></GlarryPage></PrivetRout>
             },
             {
                 path: "/blogs",

@@ -1,5 +1,9 @@
+// import { useContext } from "react";
+// import { AuthContext } from "../../Providor/AuthProvidor";
 
 const GlarryPage = () => {
+
+
     return (
         <div className="container mx-auto my-10">
 

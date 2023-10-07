@@ -5,6 +5,8 @@ import Home from "../Pagges/HomePage/Home";
 import GlarryPage from "../Pagges/GlarryPage/GlarryPage";
 import BlogPage from "../Pagges/BlogPage/BlogPage";
 import EventsDitles from "../Components/EventsDitles/EventsDitles";
+import LoginPage from "../Pagges/LoginPage/LoginPage";
+import RegisterPage from "../Components/CommentCard/RegisterPage/RegisterPage";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>
+            },
+            {
+                path: "/loginPage",
+                element: <LoginPage></LoginPage>
+            },
+            {
+                path: "/RegisterPage",
+                element: <RegisterPage></RegisterPage>
             },
         ]
     },

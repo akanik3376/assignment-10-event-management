@@ -14,7 +14,7 @@ const Banner = () => {
                     <h1 className="text-4xl text-pink-800 font-bold ">
                         Perfect Weddings <span className="text-slate-400	">Made Easy!</span>
                     </h1>
-                    <p className="py-6">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusm tempor incididunt.</p>
+                    <p className="py-6 text-white">Experience the wedding of your dreams with our dedicated team of experts by your side.</p>
                     <button className="btn bg-blue-600 hover:bg-pink-800 text-white font-semibold">Make Reservations</button>
                 </div>
             </div>

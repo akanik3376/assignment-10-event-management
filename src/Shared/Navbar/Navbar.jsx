@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -21,7 +21,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <h1 className=" flex flex-col lg:flex-row text-xl lg:text-3xl font-semibold">EVENT<span className="font-bold text-pink-600">MANAGEMENT</span></h1>
+                <img className="w-28" src="https://unicaevents.ancorathemes.com/wp-content/uploads/2015/11/nica_dark.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+
+                <Link to="/loginPage"> <button className="btn">Login</button></Link>
             </div>
         </div>
     );

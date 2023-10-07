@@ -6,7 +6,7 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 
 const Home = () => {
     const events = useLoaderData()
-    console.log(events)
+    // console.log(events)
     return (
         <div className="my-10">
             <Banner></Banner>

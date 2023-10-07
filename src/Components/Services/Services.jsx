@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 
 const Services = ({ event }) => {
     const { id, image, price, name, short_description } = event || {}
+
+
+
     return (
         <div>
 
@@ -28,6 +31,7 @@ const Services = ({ event }) => {
                                 {price}
                             </p>
                         </div>
+
                         <div className="flex-1">
                             <p className=" font-sans  text-sm font-normal  text-gray-700 antialiased opacity-75 ">
                                 {short_description}

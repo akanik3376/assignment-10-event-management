@@ -4,7 +4,7 @@ import Footer from "../Shared/Footer/Footer";
 
 const MainOutlet = () => {
     return (
-        <div>
+        <div className="font-sans">
             <div className="container mx-auto">
                 <Navbar></Navbar>
             </div>

@@ -1,65 +1,50 @@
 [
     {
         "id": 1,
-        "name": "Product A",
+        "image": "https://i.ibb.co/r5bNKXP/room-with-flowers-1417-1549.jpg",
+        "name": "Weddings",
         "price": 24.99,
         "short_description": "High-quality",
         "description": "Product A is a high-quality item designed for exceptional performance. It's perfect for your everyday needs."
     },
     {
         "id": 2,
-        "name": "Product B",
+        "image": "https://i.ibb.co/kxfPwPJ/istockphoto-1364605920-1024x1024.jpg",
+        "name": "Birthday Parties",
         "price": 34.99,
         "short_description": "Affordable choice",
-        "description": "Product B offers affordability and reliability. It's a great choice for those on a budget."
+        "description": "Birthday Parties offers affordability and reliability. It's a great choice for those on a budget."
     },
     {
         "id": 3,
-        "name": "Product C",
+        "image": "https://i.ibb.co/z5XYVc2/wedding-table-restaurant-decorated-bride-groom-118086-3786.jpg",
+        "name": "Anniversaries",
         "price": 44.99,
         "short_description": "Elegant design",
-        "description": "Product C features an elegant design and advanced features. It's a stylish addition to any setting."
+        "description": "Anniversaries features an elegant design and advanced features. It's a stylish addition to any setting."
     },
     {
         "id": 4,
-        "name": "Product D",
+        "image": "https://i.ibb.co/Tr7XMND/multigenerational-indian-family-eating-sweets-while-celebrating-festival-occasion-dressed-traditiona.jpg",
+        "name": "Engagement Parties",
         "price": 19.99,
         "short_description": "Compact and versatile",
-        "description": "Product D is compact and versatile, making it suitable for various applications. It's a great value for the price."
+        "description": "Engagement Parties is compact and versatile, making it suitable for various applications. It's a great value for the price."
     },
     {
         "id": 5,
-        "name": "Product E",
-        "price": 54.99,
-        "short_description": "Premium choice",
-        "description": "Product E is a premium item with top-notch features. It's the ultimate solution for demanding tasks."
+        "image": "https://i.ibb.co/PjmZw0Y/friends-celebrating-new-years-eve-53876-150291.jpg",
+        "name": "New Year's Eve Party",
+        "price": 39.99,
+        "short_description": "Sleek and modern",
+        "description": "Join us for the most anticipated night of the year as we bid farewell to the old year and welcome the new one with open arms! Our New Year's Eve Party promises to be a night of glitz, glamour, and unforgettable memories."
     },
     {
         "id": 6,
-        "name": "Product F",
+        "image": "https://i.ibb.co/Hz6BBKS/blue-white-candy-set-table-140725-10088.jpg",
+        "name": " Baby shower",
         "price": 29.99,
-        "short_description": "Durable construction",
-        "description": "Product F is known for its durable construction and long-lasting performance. It's a reliable companion for your projects."
-    },
-    {
-        "id": 7,
-        "name": "Product G",
-        "price": 39.99,
-        "short_description": "Sleek and modern",
-        "description": "Product G boasts a sleek and modern design that complements any environment. It's packed with innovative features."
-    },
-    {
-        "id": 8,
-        "name": "Product H",
-        "price": 49.99,
-        "short_description": "Efficient and powerful",
-        "description": "Product H is known for its efficiency and powerful performance. It's designed to meet your high-performance needs."
-    },
-    {
-        "id": 9,
-        "name": "Product I",
-        "price": 64.99,
-        "short_description": "Versatile functionality",
-        "description": "Product I offers versatile functionality for a wide range of tasks. It's a versatile tool for professionals."
+        "short_description": "Celebrating an impending birth and helping new parents prepare.",
+        "description": " Baby shower is known for its durable construction and long-lasting performance. It's a reliable companion for your projects."
     }
 ]

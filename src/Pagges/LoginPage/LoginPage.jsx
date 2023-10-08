@@ -56,7 +56,7 @@ const LoginPage = () => {
             <div className="container mx-auto">
                 <Navbar></Navbar>
             </div>
-            <div className="w-2/5 mt-10  md:w-2/4 mx-auto">
+            <div className="w-5/6 mt-10  md:w-2/4 mx-auto">
 
 
 

@@ -44,7 +44,7 @@ const Navbar = () => {
                     }
                 </div> */}
 
-                {
+                {/* {
                     user ? <>
 
                         <p className="mr-4">{user.displayName}</p>
@@ -54,10 +54,10 @@ const Navbar = () => {
                     </>
 
                         : <Link to="/loginPage" > <button className="btn">Login</button></Link>
-                }
+                } */}
 
 
-                {/* <div>
+                <div>
                     {
                         user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -85,7 +85,7 @@ const Navbar = () => {
                                 <button className="btn btn-sm font-bold  btn-ghost">Login</button>
                             </Link>
                     }
-                </div> */}
+                </div>
 
             </div>
         </div>

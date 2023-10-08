@@ -10,7 +10,9 @@ const Services = ({ event }) => {
 
 
     return (
-        <div className="p-5 mt-10 shadow-2xl rounded-md">
+        <div className="p-5 mt-10 shadow-2xl rounded-md " data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
 
             {/* ours services card */}
             <div className="rounded-lg ">

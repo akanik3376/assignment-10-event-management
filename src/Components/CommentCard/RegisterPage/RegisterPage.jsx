@@ -1,7 +1,6 @@
 import { useContext, useState, } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providor/AuthProvidor";
-// import swal from "sweetalert";
 
 const RegisterPage = () => {
 
@@ -10,7 +9,6 @@ const RegisterPage = () => {
 
     const [success, SetSuccess] = useState('')
     const [error, setError] = useState('')
-    const [isShow, setIsShoe] = useState(false)
 
     const HandelRegister = e => {
         e.preventDefault()
@@ -28,11 +26,6 @@ const RegisterPage = () => {
         else if (!/[A-Z]/.test(password)) {
             setError('error! Password must  have a capital letter');
         }
-        // else if (!/^(?=.*[a-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+{}[\]:;<>,.?~\\/-]{8,}$/.test(password)
-        // ) {
-
-        //     swal('error! must have spatial chr');
-        // }
 
         //    create user 
         createUser(email, password, name)
@@ -69,7 +62,12 @@ const RegisterPage = () => {
                                 className="input input-bordered" required />
                         </div>
 
-
+                        {/* <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo Url</span>
+                                </label>
+                                <input type="image" placeholder="Photo" className="input input-bordered" name='photo' />
+                            </div> */}
 
                         <div className="form-control">
                             <label className="label">
@@ -84,19 +82,14 @@ const RegisterPage = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type={isShow ? "text" : "password"}
+                            <input type="password"
                                 name="password"
                                 placeholder="password"
                                 className="input input-bordered" required />
-
-
-
                             <label className="label mt-3">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
-                            <div>
-                                <button className="relative" onClick={() => setIsShoe(!isShow)} >show</button >
-                            </div>
+
                             <div>
                                 {
                                     error ? <p className="text-red-700 text-xl">{error}</p>
@@ -105,13 +98,12 @@ const RegisterPage = () => {
                             </div>
                         </div>
 
-
                         <div className="form-control mt-3">
                             <button className="btn btn-primary">Sign Up</button>
                         </div>
-                        <p>You have account? please <Link className="text-indigo-700 underline font-semibold" to="/loginPage">Login</Link></p>
-                    </form>
 
+                    </form>
+                    <p>You have account? please <Link className="text-indigo-700 underline font-semibold" to="/loginPage">Login</Link></p>
                 </div>
 
             </div>

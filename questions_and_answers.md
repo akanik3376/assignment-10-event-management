@@ -20,14 +20,13 @@ console.log(greetign);
 
 #### Answer: B
 
-<i>Write your explanation here</i>
-
-## explanation
-
-hare declare greeting but console greetign so
+<i>hare declare greeting but console greetign so
 greeting=greetign are not same
 
-Two words are misspelled so console will be ReferenceError: greetign is not defined`
+Two words are misspelled so console will be ReferenceError: greetign is not defined`</i>
+
+
+
 </p>
 </details>
 
@@ -51,9 +50,9 @@ sum(1, "2");
 
 #### Answer: C
 
-<i>Write your explanation here</i>
-a=number & b=string
-When you sum a number and a string, the number will also be converted to Easting and the two numbers will sit side by side
+<i>a=number & b=string
+When you sum a number and a string, the number will also be converted to Easting and the two numbers will sit side by side</i>
+
 </p>
 </details>
 
@@ -78,9 +77,9 @@ console.log(food);
 
 #### Answer: A
 
-<i>Write your explanation here</i>
+<i>The value of food has been declared but no new value of food has been added Foot will only display the value of food when the console is locked.</i>
 
-The value of food has been declared but no new value of food has been added Foot will only display the value of food when the console is locked.
+
 </p>
 </details>
 
@@ -104,9 +103,9 @@ console.log(sayHi());
 
 #### Answer: B
 
-<i>Write your explanation here</i>
+<i>If function is called but no value is passed as a parameter, the answer is undefined if no parameters are passed to the function.</i>
 
-If function is called but no value is passed as a parameter, the answer is undefined if no parameters are passed to the function.
+
 </p>
 </details>
 
@@ -133,9 +132,9 @@ console.log(count);
 
 #### Answer: C
 
-<i>Write your explanation here</i>
+<i>The function checks each element and adds its values to nums array each time and skips if the value is false.when </i>
 
-The function checks each element and adds its values to nums array each time and skips if the value is false.when 
+
 
 </p>
 </details>

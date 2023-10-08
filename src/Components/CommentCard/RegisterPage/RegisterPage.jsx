@@ -10,6 +10,7 @@ const RegisterPage = () => {
 
     const [success, SetSuccess] = useState('')
     const [error, setError] = useState('')
+    const [isShow, setIsShoe] = useState(false)
 
     const HandelRegister = e => {
         e.preventDefault()
@@ -68,12 +69,7 @@ const RegisterPage = () => {
                                 className="input input-bordered" required />
                         </div>
 
-                        {/* <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Photo Url</span>
-                                </label>
-                                <input type="image" placeholder="Photo" className="input input-bordered" name='photo' />
-                            </div> */}
+
 
                         <div className="form-control">
                             <label className="label">

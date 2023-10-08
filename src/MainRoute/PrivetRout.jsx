@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { AuthContext } from "../Providor/AuthProvidor";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 const PrivetRout = ({ children }) => {
     const { loading, user } = useContext(AuthContext)
-
+    const location = useLocation()
+    console.log(location)
 
     if (loading) {
         return <div className="flex justify-center items-center h-[70vh]">
@@ -17,7 +18,7 @@ const PrivetRout = ({ children }) => {
     if (user) {
         return children
     }
-    return <Navigate to="/loginPage"></Navigate>
+    return <Navigate state={location.pathname} to="/loginPage"></Navigate>
 };
 
 export default PrivetRout;

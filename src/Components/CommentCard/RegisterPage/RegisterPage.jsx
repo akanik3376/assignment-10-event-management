@@ -1,5 +1,5 @@
 import { useContext, useState, } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providor/AuthProvidor";
 // import swal from "sweetalert";
 
@@ -53,63 +53,65 @@ const RegisterPage = () => {
 
             <div className="w-5/6  md:w-2/4 mx-auto">
 
-                <div className=" mb-10">
-                    <h2 className="text-3xl text-center">Please Registration !</h2>
-                    <div className="card flex-shrink-0 ">
-                        <form onSubmit={HandelRegister} className="card-body">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Name</span>
-                                </label>
-                                <input type="name"
-                                    name="name"
-                                    placeholder="name"
-                                    className="input input-bordered" required />
-                            </div>
 
-                            {/* <div className="form-control">
+
+                <div className="card mt-10 flex-shrink-0 ">
+                    <h2 className="text-3xl font-bold text-[#11111180] text-center">Please Registration !</h2>
+                    <form onSubmit={HandelRegister} className="card-body">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Name</span>
+                            </label>
+                            <input type="name"
+                                name="name"
+                                placeholder="name"
+                                className="input input-bordered" required />
+                        </div>
+
+                        {/* <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Photo Url</span>
                                 </label>
                                 <input type="image" placeholder="Photo" className="input input-bordered" name='photo' />
                             </div> */}
 
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="email"
-                                    name="email"
-                                    placeholder="email"
-                                    className="input input-bordered" required />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
-                                <input type="password"
-                                    name="password"
-                                    placeholder="password"
-                                    className="input input-bordered" required />
-                                <label className="label mt-3">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input type="email"
+                                name="email"
+                                placeholder="email"
+                                className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input type="password"
+                                name="password"
+                                placeholder="password"
+                                className="input input-bordered" required />
+                            <label className="label mt-3">
+                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
 
-                                <div>
-                                    {
-                                        error ? <p className="text-red-700 text-xl">{error}</p>
-                                            : <p className="text-green-700 text-xl">{error}{success}</p>
-                                    }
-                                </div>
+                            <div>
+                                {
+                                    error ? <p className="text-red-700 text-xl">{error}</p>
+                                        : <p className="text-green-700 text-xl">{error}{success}</p>
+                                }
                             </div>
+                        </div>
 
-                            <div className="form-control mt-3">
-                                <button className="btn btn-primary">Sign Up</button>
-                            </div>
-                        </form>
-                        <p>You have account? please <Link className="text-indigo-700 underline " to="/loginPage">Login</Link></p>
-                    </div>
+                        <div className="form-control mt-3">
+                            <button className="btn btn-primary">Sign Up</button>
+                        </div>
+                        <p>You have account? please <Link className="text-indigo-700 underline font-semibold" to="/loginPage">Login</Link></p>
+                    </form>
+
                 </div>
+
             </div>
         </div>
     );

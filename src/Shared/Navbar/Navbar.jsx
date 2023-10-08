@@ -40,19 +40,24 @@ const Navbar = () => {
             <div className="navbar-end">
                 {/* <div>
                     {
-                        user && <p className="mr-4">{user.displayName}</p> && <div>
-                            <img className="w-12 rounded-full mr-4" src={user.photoURL} alt="" />
-                        </div>
+                        user && 
                     }
-                </div>
+                </div> */}
 
                 {
-                    user ? <button onClick={HandelLogOut}>Logout</button>
+                    user ? <>
+
+                        <p className="mr-4">{user.displayName}</p>
+                        <img className="w-12 rounded-full mr-4" src={user.photoURL} alt="" />
+
+                        <button className="btn font-bold" onClick={HandelLogOut}>Logout</button>
+                    </>
+
                         : <Link to="/loginPage" > <button className="btn">Login</button></Link>
-                } */}
+                }
 
 
-                <div>
+                {/* <div>
                     {
                         user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -80,7 +85,7 @@ const Navbar = () => {
                                 <button className="btn btn-sm font-bold  btn-ghost">Login</button>
                             </Link>
                     }
-                </div>
+                </div> */}
 
             </div>
         </div>

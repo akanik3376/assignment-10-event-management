@@ -10,7 +10,7 @@ const Testimonials = () => {
             .then(data => setFeedBacks(data))
     }, [])
     return (
-        <div>
+        <div className="p-5">
             <h1 className="text-4xl font-bold text-center">Testimonials</h1>
             <h4 className="text-xl font-semibold text-center mt-3">HAPPY CLIENTS ABOUT US</h4>
 

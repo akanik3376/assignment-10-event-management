@@ -9,8 +9,8 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-90"></div>
 
             <div className="hero-content flex-col lg:flex-row">
-                <img src="https://i.ibb.co/h7VrpRP/groom-putting-ring-bride-s-finger-1157-338.jpg" className="w-80 lg:max-w-sm rounded shadow-2xl" />
-                <div className="lg:max-w-sm">
+                {/* <img src="https://i.ibb.co/h7VrpRP/groom-putting-ring-bride-s-finger-1157-338.jpg" className="w-80 lg:max-w-sm rounded shadow-2xl" /> */}
+                <div className="lg:max-w-sm text-center">
                     <h1 className="text-4xl text-pink-800 font-bold ">
                         Perfect Weddings <span className="text-slate-400	">Made Easy!</span>
                     </h1>

@@ -3,48 +3,48 @@
         "id": 1,
         "image": "https://i.ibb.co/r5bNKXP/room-with-flowers-1417-1549.jpg",
         "name": "Weddings",
-        "price": 24.99,
-        "short_description": "High-quality",
+        "price": 2000,
+        "short_description": "Creating your perfect day: We expertly plan and execute weddings, ensuring every detail shines, so you can cherish timeless moments of love and joy. thank you.",
         "description": "that the right wedding planner for you depends on your specific needs, budget, and vision for your wedding. Choose the one that aligns best with your goals to help make your wedding day as special and stress-free as possible."
     },
     {
         "id": 2,
         "image": "https://i.ibb.co/kxfPwPJ/istockphoto-1364605920-1024x1024.jpg",
         "name": "Birthday Parties",
-        "price": 34.99,
-        "short_description": "Affordable choice",
+        "price": 1199,
+        "short_description": "Turning Dreams into Memorable Celebrations: We specialize in crafting unforgettable birthday parties, bringing your vision to life with creativity, precision, and a dash of magic.",
         "description": "Birthday Parties offers affordability and reliability. It's a great choice for those on a budget.the type of birthday party chosen often depends on the age, personality, and preferences of the birthday person. Each type of party offers a unique and enjoyable way to celebrate another trip around the sun."
     },
     {
         "id": 3,
         "image": "https://i.ibb.co/z5XYVc2/wedding-table-restaurant-decorated-bride-groom-118086-3786.jpg",
         "name": "Anniversaries",
-        "price": 44.99,
-        "short_description": "Elegant design",
+        "price": 1599,
+        "short_description": "Crafting Your Perfect Milestone: We expertly plan and execute anniversaries, ensuring every detail gleams, so you can savor lasting moments of love and togetherness.",
         "description": "Anniversaries features an elegant design and advanced features. It's a stylish addition to any setting.Event Management is dedicated to helping you celebrate your love story in the most meaningful and memorable way. Let us take your vision and turn it into a beautiful reality. With our experience and passion for love celebrations, you can focus on what truly matters  your love for each other. Contact us today to discuss your upcoming anniversary celebration. Together, we'll create an unforgettable event that honors your journey of love and commitment."
     },
     {
         "id": 4,
         "image": "https://i.ibb.co/Tr7XMND/multigenerational-indian-family-eating-sweets-while-celebrating-festival-occasion-dressed-traditiona.jpg",
         "name": "Engagement Parties",
-        "price": 19.99,
-        "short_description": "Compact and versatile",
+        "price": 1599,
+        "short_description": "Crafting Your Special Moment: We skillfully plan and execute engagement parties, ensuring every detail shines, so you can treasure enduring moments of love and commitment",
         "description": "Engagement Parties is compact and versatile, making it suitable for various applications. It's a great value for the price. An engagement is more than just a ring; it's the promise of a lifetime together.  we understand the significance of this beautiful moment in your life. That's why we specialize in creating engagement parties that capture the essence of your love story and set the stage for your journey to forever."
     },
     {
         "id": 5,
         "image": "https://i.ibb.co/PjmZw0Y/friends-celebrating-new-years-eve-53876-150291.jpg",
         "name": "New Year's Eve Party",
-        "price": 39.99,
-        "short_description": "Sleek and modern",
+        "price": 899,
+        "short_description": "Crafting Your Festive Countdown: We skillfully plan and execute New Year's Eve parties, ensuring every detail dazzles, so you can revel in enduring moments of celebration and joy",
         "description": "Join us for the most anticipated night of the year as we bid farewell to the old year and welcome the new one with open arms! Our New Year's Eve Party promises to be a night of glitz, glamour, and unforgettable memories.As the clock counts down to midnight, it's time to celebrate, reflect, and welcome the possibilities of a new year.  we specialize in creating New Year's Eve parties that are not just events but unforgettable experiences. Let us help you host a soirée that dazzles and delights as you bid farewell to the old year and usher in the new."
     },
     {
         "id": 6,
         "image": "https://i.ibb.co/sj2pySj/gender-party-decorations-background-babyshower-celebrations-happy-day-parents-133748-22832.jpg",
         "name": " Baby shower",
-        "price": 29.99,
-        "short_description": "Celebrating an impending birth and helping new parents prepare.",
+        "price": 599,
+        "short_description": "Crafting Your Joyful Beginnings: We expertly plan and execute baby showers, ensuring every detail radiates, so you can embrace enduring moments of love and anticipation.",
         "description": " Baby shower is known for its durable construction and long-lasting performance. It's a reliable companion for your projects. we understand that the impending arrival of a baby is a momentous occasion that deserves to be celebrated with love and care. Our baby shower planning services are designed to create a heartwarming and memorable event that honors the parents-to-be and welcomes their bundle of joy into the world."
     }
 ]

@@ -1,11 +1,12 @@
 import { useContext, useState, } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providor/AuthProvidor";
 // import swal from "sweetalert";
 
 const RegisterPage = () => {
 
     const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate()
 
     const [success, SetSuccess] = useState('')
     const [error, setError] = useState('')
@@ -37,6 +38,7 @@ const RegisterPage = () => {
             .then(result => {
                 console.log(result)
                 SetSuccess('User create successfully')
+                navigate('/')
             })
             .catch(error => {
                 console.error(error)

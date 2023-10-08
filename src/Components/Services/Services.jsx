@@ -10,38 +10,22 @@ const Services = ({ event }) => {
 
 
     return (
-        <div>
+        <div className="p-5 mt-10 shadow-2xl rounded-md">
 
             {/* ours services card */}
+            <div className="rounded-lg ">
+                <img className="w-full h-48 rounded" src={image} alt="" />
+                <div className="mt-3 p-2 bg-[#1B1B1B0D]">
+                    <h3 className="text2xl font-semibold">{name}</h3>
+                    <p className="my-2">${price}</p>
+                    <p className="text-xs">{short_description}</p>
 
-
-            <div className="relative mt-7   rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
-                <div className="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
-                    <img
-                        src={image}
-                        className="h-full w-full object-cover"
-                    />
-                </div>
-                <div className="p-6 flex flex-col" >
-                    <div className="mb-2 flex items-center justify-between">
-                        <h4 className="block font-sans  font-semibold leading-relaxed text-blue-gray-900 text-2xl antialiased">
-                            {name}
-                        </h4>
-                        <p className="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
-                            ${price}
-                        </p>
-                    </div>
-
-                    <div className="">
-                        <p className=" font-sans  text-sm font-normal  text-gray-700 antialiased opacity-75 ">
-                            {short_description}
-                        </p>
-                    </div>
                     <Link to={`/event/${id}`}><button className="btn mt-3 bg-gradient-to-r from-green-300 to-blue-400 hover:from-pink-400 hover:to-yellow-400  text-white font-bold flex-grow">See details</button></Link>
-
                 </div>
 
             </div>
+
+
         </div>
     );
 };

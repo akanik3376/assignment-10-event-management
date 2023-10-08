@@ -16,7 +16,7 @@ const EventsDitles = () => {
         setEvent(findEvents)
     }, [id, events])
 
-    const { name, image, description } = event || {}
+    const { name, image, description, price } = event || {}
 
     return (
         <div className="flex justify-center container mx-auto ">
@@ -24,9 +24,13 @@ const EventsDitles = () => {
                 <img className="rounded h-[70vh] w-full" src={image} alt="" />
                 <div className="flex items-center gap-5 ">
                     <h3 className="text-3xl font-bold my-4">{name}</h3 >
-                    <button className="btn bg-purple-700  text-white font-bold hover:text-purple-700">Book Now</button>
+
                 </div>
                 <p>{description}</p>
+                <div className="  mt-3">
+                    <p>${price}</p>
+                    <button className="btn mt-6 bg-purple-700  text-white font-bold hover:text-purple-700">Book Now</button>
+                </div>
             </div>
         </div>
     );

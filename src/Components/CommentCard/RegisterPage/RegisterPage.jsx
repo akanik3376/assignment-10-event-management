@@ -84,14 +84,19 @@ const RegisterPage = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password"
+                            <input type={isShow ? "text" : "password"}
                                 name="password"
                                 placeholder="password"
                                 className="input input-bordered" required />
+
+
+
                             <label className="label mt-3">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
-
+                            <div>
+                                <button className="relative" onClick={() => setIsShoe(!isShow)} >show</button >
+                            </div>
                             <div>
                                 {
                                     error ? <p className="text-red-700 text-xl">{error}</p>
@@ -99,6 +104,7 @@ const RegisterPage = () => {
                                 }
                             </div>
                         </div>
+
 
                         <div className="form-control mt-3">
                             <button className="btn btn-primary">Sign Up</button>

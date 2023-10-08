@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import Navbar from "../../Shared/Navbar/Navbar";
+import Footer from "../../Shared/Footer/Footer";
 
 const EventsDitles = () => {
 
@@ -19,18 +21,26 @@ const EventsDitles = () => {
     const { name, image, description, price } = event || {}
 
     return (
-        <div className="flex justify-center container mx-auto ">
-            <div className="my-10 ">
-                <img className="rounded h-[70vh] w-full" src={image} alt="" />
-                <div className="flex items-center gap-5 ">
-                    <h3 className="text-3xl font-bold my-4">{name}</h3 >
+        <div>
+            <div className="container mx-auto">
+                <Navbar></Navbar>
+            </div>
+            <div className="flex justify-center container mx-auto ">
+                <div className="my-10 ">
+                    <img className="rounded h-[70vh] w-full" src={image} alt="" />
+                    <div className="flex items-center gap-5 ">
+                        <h3 className="text-3xl font-bold my-4">{name}</h3 >
 
+                    </div>
+                    <p>{description}</p>
+                    <div className="  mt-3">
+                        <p>${price}</p>
+                        <button className="btn mt-6 bg-purple-700  text-white font-bold hover:text-purple-700">Book Now</button>
+                    </div>
                 </div>
-                <p>{description}</p>
-                <div className="  mt-3">
-                    <p>${price}</p>
-                    <button className="btn mt-6 bg-purple-700  text-white font-bold hover:text-purple-700">Book Now</button>
-                </div>
+            </div>
+            <div>
+                <Footer></Footer>
             </div>
         </div>
     );

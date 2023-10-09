@@ -31,7 +31,7 @@ const GlarryPage = () => {
 
                     </div>
                     <div className="card rounded  bg-base-100 " data-aos="fade-left">
-                        <figure><img className="h-[80vh] md:h-[60vh] lg:h-[50vh] w-full rounded" src="/public/img/Wedding/newlyweds-smiling_1153-1049.jpg" alt="" /></figure>
+                        <figure><img className="h-[80vh] md:h-[60vh] lg:h-[50vh] w-full rounded" src="/public/img/Wedding/young-muslim-bride-groom-wedding-photos_181624-29306.jpg" alt="" /></figure>
 
                     </div>
                     <div className="card rounded  bg-base-100 " data-aos="fade-left">

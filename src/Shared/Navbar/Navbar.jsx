@@ -38,24 +38,6 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {/* <div>
-                    {
-                        user && 
-                    }
-                </div> */}
-
-                {/* {
-                    user ? <>
-
-                        <p className="mr-4">{user.displayName}</p>
-                        <img className="w-12 rounded-full mr-4" src={user.photoURL} alt="" />
-
-                        <button className="btn font-bold" onClick={HandelLogOut}>Logout</button>
-                    </>
-
-                        : <Link to="/loginPage" > <button className="btn">Login</button></Link>
-                } */}
-
 
                 <div>
                     {
@@ -64,7 +46,7 @@ const Navbar = () => {
                                 <div className="w-10 rounded-full">
                                     {
                                         user && <img src={user.photoURL} alt="" />
-                                        || <img src="https://i.ibb.co/48XC7F8/20220809-fzu5nj1wqaaqdnz-555x555.jpg" />
+
                                     }
 
                                 </div>

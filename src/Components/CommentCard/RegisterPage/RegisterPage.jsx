@@ -1,13 +1,14 @@
 import { useContext, useState, } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Providor/AuthProvidor";
+import swal from "sweetalert";
 
 const RegisterPage = () => {
 
     const { createUser } = useContext(AuthContext)
     const navigate = useNavigate()
 
-    const [success, SetSuccess] = useState('')
+
     const [error, setError] = useState('')
 
     const HandelRegister = e => {
@@ -21,17 +22,20 @@ const RegisterPage = () => {
 
         if (password.length < 6) {
 
-            setError('error! Password should be at least 6 characters');
+            return setError('error! Password should be at least 6 characters');
         }
         else if (!/[A-Z]/.test(password)) {
-            setError('error! Password must  have a capital letter');
+            return setError('error! Password must  have a capital letter');
+        }
+        else if (!/[@#$%^&+=!]/.test(password)) {
+            return setError('error! Password must  have a spatial character [@#$%^&+=!]');
         }
 
         //    create user 
         createUser(email, password, name)
             .then(result => {
                 console.log(result)
-                SetSuccess('User create successfully')
+                swal('User create successfully')
                 navigate('/')
             })
             .catch(error => {
@@ -92,8 +96,8 @@ const RegisterPage = () => {
 
                             <div>
                                 {
-                                    error ? <p className="text-red-700 text-xl">{error}</p>
-                                        : <p className="text-green-700 text-xl">{error}{success}</p>
+                                    error && <p className="text-red-700 text-xl">{error}</p>
+
                                 }
                             </div>
                         </div>

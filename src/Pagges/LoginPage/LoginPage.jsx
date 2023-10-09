@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providor/AuthProvidor";
 import Navbar from "../../Shared/Navbar/Navbar";
+import swal from "sweetalert";
 
 const LoginPage = () => {
 
@@ -26,7 +27,7 @@ const LoginPage = () => {
             .then(result => {
                 console.log(result)
                 // setSuccess('Login success full')
-
+                swal("login success fully")
                 // naviget after singin 
                 navigate(location?.state ? location.state : '/')
             })

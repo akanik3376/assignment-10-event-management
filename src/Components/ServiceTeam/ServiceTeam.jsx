@@ -13,15 +13,15 @@ const ServiceTeam = () => {
 
                 <div className="mt-7">
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 ">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 overflow-x-hidden	" >
                         <div className=" grid grid-cols-4  lg:grid-cols-6 bg-base-100 ">
-                            <div className="col-span-2 lg:col-span-3">
+                            <div className="col-span-2 lg:col-span-3 ">
 
-                                <img className="h-full" src="https://i.ibb.co/6J384p3/bold-asian-man-yellow-hoodie-yellow-studio-pointing-side-1187-394159.jpg" alt="" />
+                                <img className="h-full  " src="https://i.ibb.co/6J384p3/bold-asian-man-yellow-hoodie-yellow-studio-pointing-side-1187-394159.jpg" alt="" />
 
                             </div>
                             <div className=" p-5 col-span-2 lg:col-span-3
-                            bg-black text-start">
+                            bg-black text-start ">
 
                                 <h1 className="text-sm font-extrabold text-green-600">FOUNDER
                                 </h1>
@@ -38,11 +38,11 @@ const ServiceTeam = () => {
                         <div className=" grid grid-cols-4 lg:grid-cols-6 bg-base-100 ">
                             <div className="col-span-2 lg:col-span-3">
 
-                                <img className="h-full" src="https://i.ibb.co/fQ8tjwq/portrait-young-handsome-man-standing-with-crossed-arms-with-isolated-studio-yellow-background-1150-6.jpg" alt="" />
+                                <img className="h-full " src="https://i.ibb.co/fQ8tjwq/portrait-young-handsome-man-standing-with-crossed-arms-with-isolated-studio-yellow-background-1150-6.jpg" alt="" />
 
                             </div>
                             <div className=" p-5 col-span-2 lg:col-span-3
-                            bg-black text-start">
+                            bg-black text-start ">
 
                                 <h1 className="text-sm font-extrabold text-green-600">MANAGER</h1>
                                 <h3 className="text-2xl font-bold text-green-600">James Powell</h3>

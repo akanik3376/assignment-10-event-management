@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Footer from "../../Shared/Footer/Footer";
 
@@ -33,16 +33,22 @@ const EventsDitles = () => {
 
                     </div>
                     <p>{description}</p>
-                    <div className="  mt-3">
+                    <div className=" mt-3">
                         <p>${price}</p>
-                        <button className="btn mt-6 bg-purple-700  text-white font-bold hover:text-purple-700">Book Now</button>
+                        <div className="">
+                            <button className="mr-5 btn mt-6 bg-purple-700  text-white font-bold hover:text-purple-700">Book Now</button>
+                            <Link to="/">
+                                <button className="btn bg-violet-600 py-2 px-3 mt-6  text-white font-bold ">Go to home</button>
+                            </Link>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <div>
                 <Footer></Footer>
             </div>
-        </div>
+        </div >
     );
 };
 

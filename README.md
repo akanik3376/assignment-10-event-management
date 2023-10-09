@@ -1,8 +1,16 @@
-# React + Vite
+## My Website name is Event management
+## Website link:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## My web site features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* My website is user friendly for smart phone tablet and computer users.
+
+* The navigation menu prominently displayed and easy to use, clearly labeling sections and pages.
+* Easy to Navigate one page TO ANOTHER page.
+* This website has good page speed.
+* Web page design is responsive for all  devices.
+
+* This website has firebase security protocols.
+* This websites footer has include the bottom of the page and contains to impotent pages such as privacy policy and contact information's.
+

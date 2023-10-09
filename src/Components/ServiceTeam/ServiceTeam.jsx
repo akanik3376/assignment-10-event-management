@@ -45,7 +45,7 @@ const ServiceTeam = () => {
                             bg-black text-start ">
 
                                 <h1 className="text-sm font-extrabold text-green-600">MANAGER</h1>
-                                <h3 className="text-2xl font-bold text-green-600">James Powell</h3>
+                                <h3 className="text-2xl font-bold text-green-600">James Grilish</h3>
                                 <div className='flex  flex-col gap-3 text-4xl my-2 bg-'>
                                     <BsFacebook className='text-blue-700'></BsFacebook>
                                     <BiLogoInstagramAlt className='text-red-900'></BiLogoInstagramAlt>
